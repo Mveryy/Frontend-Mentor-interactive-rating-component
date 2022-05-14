@@ -7,6 +7,10 @@ Esta é uma solução para o [Interactive rating component challenge on Frontend
 ![](screenshots/tela1.png)
 ![](screenshots/tela2.png)
 
+## Links
+
+Link: https://mveryy.github.io/Frontend-Mentor-interactive-rating-component/
+
 ## Aprendizados
 
 Neste projeto eu pude aplicar e treinar meus conhecimentos em CSS e JavaScript.
