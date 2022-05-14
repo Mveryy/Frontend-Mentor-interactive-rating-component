@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Overpass", sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(216, 12%, 8%, 0.986);
+}
+
+#star {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: hsl(213, 19%, 18%);
+}
+
+#box {
+    /* max-width: 300px; */
+    border: none;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.8rem;
+    /* max-width: 50vw; */
+    background-image: linear-gradient(180deg, hsl(213, 19%, 18%), hsl(216, 12%, 8%));
+}
+
+.boxRating {
+    gap: 25px;
+    max-width: 25vw;
+    min-height: 355px;
+    max-height: 355px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    transition: ease-in-out 0.5s;
+}
+
+h1 {
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+
+p {
+    font-size: 15px;
+    font-weight: 400;
+    color: hsl(217, 12%, 63%);
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.button {
+    cursor: pointer;
+    font-size: 15px;
+    background-color: hsla(218, 10%, 15%, 0.836);
+    color: hsl(217, 12%, 63%);
+    border-radius: 50%;
+    border: none;
+    width: 50px;
+    height: 50px;
+    transition: ease-in-out 0.3s;
+}
+
+.button:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+
+.buttonActive {
+    background-color: hsl(217, 12%, 63%);
+    color: white;
+}
+
+#submit {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 2rem;
+    background-color: hsl(25, 97%, 53%);
+    transition: ease-in-out 0.2s;
+}
+
+#submit:hover {
+    color: hsl(25, 97%, 53%);
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.boxThanks {
+    height: 355px;
+    padding: 25px;
+    max-width: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    transition: ease-in-out 0.5s;
+}
+
+.boxThanks img {
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.boxThanks div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(25, 97%, 53%);
+    width: 13rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: hsl(213, 19%, 18%);
+}
+
+.text {
+    margin-top: 2rem;
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boxThanks h1 {
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+
+.boxThanks p {
+    max-width: 30rem;
+    text-align: center;
+    line-height: 25px;
+}
+
+.hidden {
+    opacity: 0;
+    z-index: -1;
+}
+
+.attribution {
+    margin-top: 2rem;
+    text-align: center;
+    color: white;
+    line-height: 30px;
+}
+
+@media (max-width: 768px) {
+    #box {
+        width: 70vw;
+    }
+
+    .boxRating {
+        min-width: 60vw;
+    }
+
+    #star {
+        width: 40px;
+        height: 40px;
+    }
+
+    #star img {
+        width: 18px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .button {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .boxThanks {
+        min-width: 60vw;
+    }
+}
