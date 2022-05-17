@@ -9,7 +9,7 @@ Esta é uma solução para o [Interactive rating component challenge on Frontend
 
 ## Links
 
-Link: https://mveryy.github.io/Frontend-Mentor-interactive-rating-component/
+Link: https://mveryy.github.io/Interactive-rating-component/
 
 ## Aprendizados
 
